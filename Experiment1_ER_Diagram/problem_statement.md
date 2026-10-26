@@ -22,7 +22,7 @@ FlexiFit Gym wants a database to manage its members, trainers, and fitness progr
 - Payments tracked for memberships and sessions.
 
 ### ER Diagram:
-![WhatsApp Image 2025-08-28 at 21 41 52_0d3b2057](https://github.com/user-attachments/assets/067a8872-0a16-4d0f-80c3-cde5fbe2cb97)
+<img width="1145" height="696" alt="image" src="https://github.com/user-attachments/assets/fe3c8b1a-bf84-4f25-8cdb-444d3b88c34b" />
 
 
 ### Entities and Attributes
@@ -66,7 +66,7 @@ The Central Library wants to manage book lending and cultural events.
 - Overdue fines apply for late returns.
 
 ### ER Diagram:
-![WhatsApp Image 2025-08-28 at 21 50 47_6450048c](https://github.com/user-attachments/assets/034cadae-7259-4771-b862-b124130efb47)
+<img width="1310" height="702" alt="WhatsApp Image 2026-10-26 at 10 41 07 AM" src="https://github.com/user-attachments/assets/4ead2191-2d18-46ab-8f1a-346e53f8c172" />
 
 
 ### Entities and Attributes
@@ -108,7 +108,7 @@ A popular restaurant wants to manage *reservations, orders, and billing*.
 - *Waiters* assigned to serve reservations.  
 
 ###  ER Diagram
-![WhatsApp Image 2025-08-29 at 14 35 17_70104f15](https://github.com/user-attachments/assets/a20b22a6-154f-4287-be24-9239a5bfd22e)
+<img width="1077" height="697" alt="image" src="https://github.com/user-attachments/assets/8ae11942-74ed-414a-b5ce-f31a344433d3" />
 
 ###  Entities and Attributes
 | Entity    | Attributes (PK, FK) | Notes |
