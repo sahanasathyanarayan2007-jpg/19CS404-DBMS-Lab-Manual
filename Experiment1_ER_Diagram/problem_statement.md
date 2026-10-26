@@ -22,33 +22,20 @@ FlexiFit Gym wants a database to manage its members, trainers, and fitness progr
 - Payments tracked for memberships and sessions.
 
 ### ER Diagram:
-*Paste or attach your diagram here*  
-![ER Diagram](er_diagram_fitness.png)
+<img width="1145" height="696" alt="image" src="https://github.com/user-attachments/assets/4ca1f27c-062a-40ce-b5b7-ad80f8233721" />
+
 
 ### Entities and Attributes
 
-| Entity | Attributes (PK, FK) | Notes |
-|--------|--------------------|-------|
-|        |                    |       |
-|        |                    |       |
-|        |                    |       |
-|        |                    |       |
-|        |                    |       |
+<img width="838" height="502" alt="image" src="https://github.com/user-attachments/assets/25de606f-eb0d-4b1f-8a36-db80ade6c8f2" />
+
 
 ### Relationships and Constraints
 
-| Relationship | Cardinality | Participation | Notes |
-|--------------|------------|---------------|-------|
-|              |            |               |       |
-|              |            |               |       |
-|              |            |               |       |
+<img width="842" height="531" alt="image" src="https://github.com/user-attachments/assets/d2ee585c-5242-4d2f-ad54-f8768f7592bc" />
 
-### Assumptions
-- 
-- 
-- 
 
----
+
 
 # Scenario B: City Library Event & Book Lending System
 
@@ -64,33 +51,16 @@ The Central Library wants to manage book lending and cultural events.
 - Overdue fines apply for late returns.
 
 ### ER Diagram:
-*Paste or attach your diagram here*  
-![ER Diagram](er_diagram_library.png)
+<img width="1310" height="702" alt="WhatsApp Image 2026-10-26 at 10 41 07 AM" src="https://github.com/user-attachments/assets/ca599e79-51ff-4754-b2fd-5fb5ff97e2be" />
 
 ### Entities and Attributes
-
-| Entity | Attributes (PK, FK) | Notes |
-|--------|--------------------|-------|
-|        |                    |       |
-|        |                    |       |
-|        |                    |       |
-|        |                    |       |
-|        |                    |       |
+<img width="846" height="367" alt="image" src="https://github.com/user-attachments/assets/cd09f975-9966-43b5-943b-fd984494555d" />
 
 ### Relationships and Constraints
+<img width="835" height="343" alt="image" src="https://github.com/user-attachments/assets/ffdec2f2-22fc-413a-8e95-760fa5c8d419" />
 
-| Relationship | Cardinality | Participation | Notes |
-|--------------|------------|---------------|-------|
-|              |            |               |       |
-|              |            |               |       |
-|              |            |               |       |
 
-### Assumptions
-- 
-- 
-- 
 
----
 
 # Scenario C: Restaurant Table Reservation & Ordering
 
@@ -106,33 +76,18 @@ A popular restaurant wants to manage reservations, orders, and billing.
 - Waiters assigned to serve reservations.
 
 ### ER Diagram:
-*Paste or attach your diagram here*  
-![ER Diagram](er_diagram_restaurant.png)
+<img width="1032" height="687" alt="image" src="https://github.com/user-attachments/assets/fa96a790-6e75-4382-9e39-fa8d7ed43e79" />
 
-### Entities and Attributes
-
-| Entity | Attributes (PK, FK) | Notes |
-|--------|--------------------|-------|
-|        |                    |       |
-|        |                    |       |
-|        |                    |       |
-|        |                    |       |
-|        |                    |       |
 
 ### Relationships and Constraints
+<img width="840" height="351" alt="image" src="https://github.com/user-attachments/assets/9a9d294d-6086-4237-bfb7-8dd6ae83435e" />
 
-| Relationship | Cardinality | Participation | Notes |
-|--------------|------------|---------------|-------|
-|              |            |               |       |
-|              |            |               |       |
-|              |            |               |       |
+
+### ER DIAGRAM
+<img width="1032" height="687" alt="image" src="https://github.com/user-attachments/assets/b10c6e71-b7da-4369-a97f-e18868f61e59" />
 
 ### Assumptions
-- 
-- 
-- 
-
----
+Only registered members can borrow books. Members may register for multiple events. Every event has at least one speaker. A book can be borrowed many times at different periods.
 
 ## Instructions for Students
 
