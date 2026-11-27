@@ -65,15 +65,35 @@ select Address,count(*) as TotalPatients from Patients group by Address;
 
 **Question 2**
 ---
--- Paste Question 2 here
+```
+What is the average dosage prescribed for each medication?
 
-```sql
--- Paste your SQL code below for Question 2
+Sample tablePrescriptions Table
+
+
+
+For example:
+
+Result
+Medication     AvgDosage
+-------------  ----------
+Ciprofloxacin  500.0
+Doxorubicin    60.0
+Ibuprofen      400.0
+Levothyroxine  50.0
+Lisinopril     10.0
+MMR            0.5
+Pending        0.0
+Prenatal vita  1.0
+Sertraline     50.0
+Topiramate     25.0
 ```
 
 **Output:**
-
-![Output2](output.png)
+```
+select Medication,avg(Dosage) as AvgDosage from Prescriptions group by Medication;
+```
+<img width="586" height="682" alt="image" src="https://github.com/user-attachments/assets/7607e8a7-de21-4186-b85d-87e3cfd982a3" />
 
 **Question 3**
 ---
