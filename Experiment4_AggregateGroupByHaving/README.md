@@ -58,8 +58,9 @@ Mexico      3
 **Output:**
 ```
 select Address,count(*) as TotalPatients from Patients group by Address;
-<img width="640" height="397" alt="image" src="https://github.com/user-attachments/assets/988a0d13-035e-482a-9607-84ac8fb0cfae" />
 ```
+<img width="640" height="397" alt="image" src="https://github.com/user-attachments/assets/988a0d13-035e-482a-9607-84ac8fb0cfae" />
+
 
 
 **Question 2**
