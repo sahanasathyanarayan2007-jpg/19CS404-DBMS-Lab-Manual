@@ -97,99 +97,239 @@ select Medication,avg(Dosage) as AvgDosage from Prescriptions group by Medicatio
 
 **Question 3**
 ---
--- Paste Question 3 here
+```
+How many patients are covered by each insurance company?
 
-```sql
--- Paste your SQL code below for Question 3
+Sample table:Insurance Table
+
+name               type
+-----------------  ----------
+InsuranceID        INTEGER
+PatientID          INTEGER
+InsuranceCompany   TEXT
+PolicyNumber       TEXT
+PolicyHolder       TEXT
+ValidityPeriod     TEXT
+For example:
+
+Result
+InsuranceCompany   TotalPatients
+-----------------  -------------
+DEF Insurance      1
+GHI Insurance      1
+GLM Insurance      2
+JKL Insurance      1
+MNO Insurance      3
+PQR Insurance      1
+YZA Insurance      1
 ```
 
 **Output:**
 
-![Output3](output.png)
+```
+select InsuranceCompany ,count (*) as TotalPatients from Insurance group by InsuranceCompany;
+```
+<img width="702" height="602" alt="image" src="https://github.com/user-attachments/assets/4537fc68-a3be-4415-9f83-027b94c60287" />
 
 **Question 4**
 ---
--- Paste Question 4 here
+```
+Write a SQL query to find Who has the highest income among employee living in California?
 
-```sql
--- Paste your SQL code below for Question 4
+Table: employee
+
+name        type
+----------  ----------
+id          INTEGER
+name        TEXT
+age         INTEGER
+city        TEXT
+income      INTEGER
+For example:
+
+Result
+name        max(income)
+----------  -----------
+Adam        5000000
+
 ```
 
 **Output:**
 
-![Output4](output.png)
+```
+select name, max(income) from employee where city='California';
+```
+<img width="591" height="255" alt="image" src="https://github.com/user-attachments/assets/e875d179-af73-451e-863b-d6279f5855f4" />
 
 **Question 5**
 ---
--- Paste Question 5 here
+```
+Write a SQL query to return the total number of rows in the 'customer' table where the city is not Noida.
 
-```sql
--- Paste your SQL code below for Question 5
+Sample table: customer
+
+
+
+ 
+
+For example:
+
+Result
+COUNT
+----------
+9
+
 ```
 
 **Output:**
 
-![Output5](output.png)
+```
+select count(*) as COUNT from customer where city !='Noida';
+```
+<img width="350" height="250" alt="image" src="https://github.com/user-attachments/assets/063cd6ce-a8ec-418a-a98f-5598b3401e5a" />
 
 **Question 6**
 ---
--- Paste Question 6 here
+```
+Write a SQL query to Calculate the average income of the employees with names starting with 'A': 
 
-```sql
--- Paste your SQL code below for Question 6
+Table: employee
+
+name        type
+----------  ----------
+id          INTEGER
+name        TEXT
+age         INTEGER
+city        TEXT
+income      INTEGER
+For example:
+
+Result
+avg_income
+----------
+5000000.0
 ```
 
 **Output:**
 
-![Output6](output.png)
+```
+select avg(income) as avg_income from employee where name like 'A%';
+```
+<img width="312" height="225" alt="image" src="https://github.com/user-attachments/assets/44bb0e51-305f-4a73-a4eb-c90f87eed2f8" />
 
 **Question 7**
 ---
--- Paste Question 7 here
+```
+Write a SQL query to calculate the average purchase amount of all orders. Return average purchase amount.
 
-```sql
--- Paste your SQL code below for Question 7
+Sample table: orders
+
+ord_no      purch_amt   ord_date    customer_id  salesman_id
+
+----------  ----------  ----------  -----------  -----------
+
+70001       150.5       2012-10-05  3005         5002
+
+70009       270.65      2012-09-10  3001         5005
+
+70002       65.26       2012-10-05  3002         5001
+
+ 
+
+For example:
+
+Result
+AVERAGE
+----------
+1461.765
 ```
 
 **Output:**
 
-![Output7](output.png)
+```
+select avg(purch_amt) as AVERAGE from orders;
+```
+<img width="330" height="232" alt="image" src="https://github.com/user-attachments/assets/dd418035-cbad-4609-9152-2cafa01d7758" />
 
 **Question 8**
 ---
--- Paste Question 8 here
+```
+Write the SQL query that achieves the grouping of data by age, calculates the minimum income for each age group, and includes only those age groups where the minimum income is less than 1,000,000.
 
-```sql
--- Paste your SQL code below for Question 8
+Sample table: employee
+
+
+
+For example:
+
+Result
+age         Income
+----------  ----------
+32          200000
+40          350000
+45          450000
 ```
 
 **Output:**
 
-![Output8](output.png)
+```
+select age,min(Income) as Income from employee group by age having min(Income) <1000000;
+```
+<img width="535" height="367" alt="image" src="https://github.com/user-attachments/assets/7ea0a624-5b43-4b90-8121-6c638c0f8805" />
 
 **Question 9**
 ---
--- Paste Question 9 here
+```
+Write a SQL query to identify the cities (addresses) where the average salary is greater than Rs. 5000, as per the "customer1" table.
 
-```sql
--- Paste your SQL code below for Question 9
+Sample table: customer1
+
+
+
+For example:
+
+Result
+address     AVG(salary)
+----------  -----------
+Bhopal      8500.0
+Indore      10000.0
+Mumbai      6500.0
 ```
 
 **Output:**
 
-![Output9](output.png)
+```
+select address, AVG(salary) from customer1 group by address having avg(salary) > 5000;
+```
+<img width="562" height="362" alt="image" src="https://github.com/user-attachments/assets/ec4472fe-0a36-4f9b-96a6-1a14f91830f1" />
 
 **Question 10**
 ---
--- Paste Question 10 here
+```
+Write the SQL query that achieves the grouping of data by city, calculates the total income for each city, and includes only those cities where the total income sum is greater than 200,000.
 
-```sql
--- Paste your SQL code below for Question 10
+Sample table: employee
+
+
+
+For example:
+
+Result
+city        Income
+----------  ----------
+Alaska      450000
+Arizona     1000000
+California  5300000
+Florida     5350000
+Georgia     250000
 ```
 
 **Output:**
 
-![Output10](output.png)
+```
+select city,sum(Income) as Income from employee group by city having sum(Income) > 200000;
+```
+<img width="542" height="467" alt="image" src="https://github.com/user-attachments/assets/99e1f18e-227b-4bfe-a726-5d5e122eb3f3" />
 
 
 ## RESULT
