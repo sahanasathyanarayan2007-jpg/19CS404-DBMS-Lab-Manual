@@ -38,15 +38,29 @@ HAVING condition;
 
 **Question 1**
 --
--- Paste Question 1 here
+```
+How many patients are there in each city?
 
-```sql
--- Paste your SQL code below for Question 1
+Sample table: Patients Table
+
+
+
+For example:
+
+Result
+Address     TotalPatients
+----------  -------------
+Berlin      3
+Chicago     4
+Mexico      3
 ```
 
 **Output:**
+```
+select Address,count(*) as TotalPatients from Patients group by Address;
+<img width="640" height="397" alt="image" src="https://github.com/user-attachments/assets/988a0d13-035e-482a-9607-84ac8fb0cfae" />
+```
 
-![Output1](output.png)
 
 **Question 2**
 ---
